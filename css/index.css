@@ -75,7 +75,18 @@ h1, h2, h3, h4, h5 {
                   //border: 1px solid red;
             }
 }
-/*================Will use this logo for tablet==================*/
+
+/*===============phone display 500px container ====================*/
+@media(max-width:500px){
+      .container{
+            width: 97%;
+            margin: auto;
+            //border: 1px solid red;
+      }
+}
+/*=============================================================== */
+
+/*=================Will use this logo for tablet==================*/
 .logo-t {
       display: none;
 }
@@ -98,8 +109,29 @@ header nav a {
       .container header .logo-t{
          display: flex;
          justify-content: center;
-         margin: auto;
+         margin: 30px auto;
       }
+}
+/*==========================================================*/
+
+/*========================Header for phone====================*/
+@media(max-width:500px){
+      header nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 1px solid silver;
+            }
+
+      header nav a {
+            height: 50px;
+            width: 100%;
+            border-top: 1px solid silver;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
 }
 /*==========================================================*/
 .cta {
@@ -129,6 +161,7 @@ header nav a {
             display:none;
       }
 }
+/*=============================================================== */
 
 /*========Tablet display800px cta image display none==========*/
 @media(max-width:800px){
@@ -138,6 +171,18 @@ header nav a {
 }
 /*================================================================*/
 
+/*========Phone display 500px Above-img==========*/
+@media(max-width:500px){
+      .above-img {
+            flex-wrap: wrap;
+            width: 100%;
+            }
+
+      .above-img .features{
+            margin-bottom: 40px;
+      }         
+}
+/*================================================================*/
 hr {
       margin: 50px 0px;
       border: 1px solid black
@@ -149,7 +194,7 @@ hr {
 }
 
 .mid-image {
-	margin: 40px 0px;
+	margin: 10% 0px;
 }
 
 .below-img {
@@ -157,6 +202,21 @@ hr {
 	justify-content: space-between;
 	margin: 2px;
 }
+
+/*========Phone display 500px Below-img==========*/
+@media(max-width:500px){
+      .below-img {
+            flex-wrap: wrap;
+            width: 100%;
+            }
+      .below-img .services {
+            margin-bottom: 40px;
+      }  
+      .below-img .product {
+            margin-bottom: 40px;
+      }                
+}
+/*================================================================*/
 
 footer address {
       margin: 25px 0px;
