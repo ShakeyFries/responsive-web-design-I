@@ -1,3 +1,347 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/*===================My Code=====================================*/
+.container {
+	width: 878px;
+	margin: auto;
+	//border: 1px solid red;
+}
+/*===============Tablet display800px container ====================*/
+@media(max-width:800px){
+            .container{
+                  width: 97%;
+                  margin: auto;
+                  //border: 1px solid red;
+            }
+}
+
+/*===============phone display 500px container ====================*/
+@media(max-width:500px){
+      .container{
+            width: 97%;
+            margin: auto;
+            //border: 1px solid red;
+      }
+}
+/*=============================================================== */
+
+/*=================Will use this logo for tablet==================*/
+.logo-t {
+      display: none;
+}
+/*=============================================================== */
+header nav {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 40px -60px;
+}
+
+header nav a {
+	color:silver;
+	text-decoration: none;
+}
+/*================Header for Tablet==================*/
+@media(max-width:800px){
+      header nav .logo {
+            display:none;
+      }
+      .container header .logo-t{
+         display: flex;
+         justify-content: center;
+         margin: 30px auto;
+      }
+}
+/*==========================================================*/
+
+/*========================Header for phone====================*/
+@media(max-width:500px){
+      header nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 1px solid silver;
+            }
+
+      header nav a {
+            height: 50px;
+            width: 100%;
+            border-top: 1px solid silver;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+}
+/*==========================================================*/
+.cta {
+	display: flex;
+	justify-content: space-around;
+}
+
+.cta-text {
+	font-size: 80px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.cta button {
+	display: flex;
+	margin-left: 80px;
+	text-align: center;
+	padding: 8px 50px;
+      background: none;
+      border: 1px solid black;
+      font-size: 12pt
+}
+
+/*========Tablet display800px cta image dispplay none==========*/
+@media(max-width:800px){
+      .cta img {
+            display:none;
+      }
+}
+/*=============================================================== */
+
+/*========Tablet display800px cta image display none==========*/
+@media(max-width:800px){
+      .middle-img {
+            width: 99%;   
+      }         
+}
+/*================================================================*/
+
+/*========Phone display 500px Above-img==========*/
+@media(max-width:500px){
+      .above-img {
+            flex-wrap: wrap;
+            width: 100%;
+            }
+
+      .above-img .features{
+            margin-bottom: 40px;
+      }         
+}
+/*================================================================*/
+hr {
+      margin: 50px 0px;
+      border: 1px solid black
+}
+
+.above-img {
+      display: flex;
+      justify-content: space-between;
+}
+
+.mid-image {
+	margin: 10% 0px;
+}
+
+.below-img {
+	display: flex;
+	justify-content: space-between;
+	margin: 2px;
+}
+
+/*========Phone display 500px Below-img==========*/
+@media(max-width:500px){
+      .below-img {
+            flex-wrap: wrap;
+            width: 100%;
+            }
+      .below-img .services {
+            margin-bottom: 40px;
+      }  
+      .below-img .product {
+            margin-bottom: 40px;
+      }                
+}
+/*================================================================*/
+
+footer address {
+      margin: 25px 0px;
+}
+
+#ph {
+      margin: 25px 0px;
+}
+
+
+.copyright {
+      text-align: center
+}
+
+#e-mail {
+      margin-bottom: 35px;
+}
+/*===============Below is the CSS for the Services page==========*/
+.service {
+      width:97%;
+      height: 100px;
+      margin-top: 40px;
+      border-bottom: 1px solid black; 
+      padding-bottom: 30px;
+}
+
+
+.boxes .item {
+	padding: 5px;
+	width: 42%;
+	border: 1px solid black;
+	background-color: #EBEBEB;
+	margin-top: 40px;
+	
+}
+
+.boxes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-bottom: 30px;
+}
+
+.boxes .item button {
+	background: whitesmoke;
+	border: 1px solid black;
+	width: 140px;
+	height: 30px;
+	margin:20px;
+	margin-left: 0px;
+	padding-left: 35px;
+	border-radius: 7%;
+}
+
+.facts {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.faqs {
+	width: 42%;
+}
+
+.facts img {
+	width: 47%;
+}
+
+.facts .faqs p {
+	margin-bottom: 30px;
+}
+
+
+.facts .faqs ul li {
+	margin-bottom: 10px;
+	list-style-type: square;
+}
+
+.facts .faqs ul {
+	margin-left: 20px;
+}
+
+.service h1 {
+	font-size: 20pt;
+}
+/*=====Below is the CSS for the Services Tablet 800px==========*/
+@media(max-width:800px){
+            .logo-t {
+            display: flex;
+      }
+            .services-header-img {
+                  width: 99%;
+                  padding: 5px;
+      }
+            .service {
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  justify-content: space-evenly;
+                  margin-left: 2%;
+                  }
+}
+/*================================================================*/
+
+/*=====Below is the CSS for the Services Mobile 500px==========*/
+@media(max-width: 500px){
+            .boxes {
+                  display:flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: space-around;
+                  }
+
+            .facts img {
+                  display: none;
+            }
+
+            .facts {
+                  display: flex;
+                  justify-content: center;
+                  text-align: justify;
+                  }
+      }
 
 
